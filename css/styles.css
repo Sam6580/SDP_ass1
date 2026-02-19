@@ -1,0 +1,100 @@
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+/* ---------------------- FLEXBOX HIGHLIGHTS ---------------------- */
+/*
+  Header/Nav: `.navbar` uses Flexbox to align the logo and navigation links horizontally.
+  The `.nav-links` list also uses Flexbox for the row of links.
+
+  Contact area: `.contact-container` uses Flexbox to place `.contact-info` and
+  `.contact-form` side-by-side. `flex-wrap: wrap` makes them stack on small screens.
+
+  Look for these selectors in this file: `.navbar`, `.nav-links`, `.contact-container`.
+*/
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;color:#222;background:#f7f8fa}
+
+.site-header{background:#fff;border-bottom:1px solid #e6e9ee}
+
+.navbar{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+
+.logo{font-weight:700;color:#0b66c3;text-decoration:none;font-size:1.125rem}
+.nav-links{list-style:none;display:flex;gap:1rem}
+.nav-links a{color:#0b66c3;text-decoration:none;padding:0.35rem 0.5rem;border-radius:4px}
+.nav-links a:hover{background:#eef6ff}
+.nav-links a.active{background:#0b66c3;color:#fff}
+
+.contact-hero{max-width:900px;margin:1.5rem auto;text-align:center;padding:1rem}
+.contact-hero h1{font-size:2rem;margin-bottom:0.25rem}
+.contact-hero p{color:#4b5563}
+
+.contact-container{max-width:1100px;margin:1rem auto;display:flex;gap:2rem;padding:1rem;align-items:flex-start}
+.contact-info,.contact-form{background:#fff;padding:1.25rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)}
+.contact-info{flex:1 1 40%}
+.contact-form{flex:1 1 55%}
+.contact-info h2,.contact-form h2{margin-bottom:0.75rem}
+.hospital-name{font-weight:700;margin-bottom:0.25rem}
+.address,.phone,.email{color:#374151;margin-bottom:0.5rem}
+
+form label{display:block;margin-top:0.75rem;color:#374151;font-size:0.95rem}
+input[type="text"],input[type="email"],textarea{width:100%;padding:0.6rem;border:1px solid #d1d5db;border-radius:6px;margin-top:0.25rem}
+button[type="submit"]{margin-top:1rem;background:#0b66c3;color:#fff;padding:0.6rem 1rem;border:none;border-radius:6px;cursor:pointer}
+button[type="submit"]:hover{background:#094f9a}
+
+.page-content{max-width:900px;margin:2rem auto;padding:1rem;background:#fff;border-radius:8px}
+
+.site-footer{margin-top:2rem;padding:1rem 0;text-align:center;color:#6b7280}
+
+/* Header / Navigation - use Flexbox */
+.site-header{background:#fff;border-bottom:1px solid #e6e9ee}
+.navbar{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem;gap:1rem}
+.navbar-inner{display:flex;align-items:center;gap:1rem;width:100%}
+.logo{font-weight:700;color:#0b66c3;text-decoration:none;font-size:1.125rem;flex:0 0 auto}
+.nav-links{list-style:none;display:flex;gap:1rem;align-items:center;margin-left:auto}
+.nav-links li{list-style:none}
+.nav-links a{color:#0b66c3;text-decoration:none;padding:0.35rem 0.5rem;border-radius:4px;display:inline-block}
+.nav-links a:hover{background:#eef6ff}
+.nav-links a.active{background:#0b66c3;color:#fff}
+
+/* Hero */
+.contact-hero{max-width:900px;margin:1.5rem auto;text-align:center;padding:1rem}
+.contact-hero h1{font-size:2rem;margin-bottom:0.25rem}
+.contact-hero p{color:#4b5563}
+
+/* Contact area: Flexbox with wrapping on small screens */
+.contact-container{max-width:1100px;margin:1rem auto;display:flex;gap:2rem;padding:1rem;align-items:flex-start;flex-wrap:wrap}
+.contact-info,.contact-form{background:#fff;padding:1.25rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)}
+.contact-info{flex:1 1 320px;min-width:260px}
+.contact-form{flex:1 1 420px;min-width:280px}
+.contact-info h2,.contact-form h2{margin-bottom:0.75rem}
+.hospital-name{font-weight:700;margin-bottom:0.25rem}
+.address,.phone,.email{color:#374151;margin-bottom:0.5rem}
+
+/* Form controls */
+form label{display:block;margin-top:0.75rem;color:#374151;font-size:0.95rem}
+input[type="text"],input[type="email"],textarea{width:100%;padding:0.6rem;border:1px solid #d1d5db;border-radius:6px;margin-top:0.25rem}
+button[type="submit"]{margin-top:1rem;background:#0b66c3;color:#fff;padding:0.6rem 1rem;border:none;border-radius:6px;cursor:pointer}
+button[type="submit"]:hover{background:#094f9a}
+
+.page-content{max-width:900px;margin:2rem auto;padding:1rem;background:#fff;border-radius:8px}
+
+.site-footer{margin-top:2rem;padding:1rem 0;text-align:center;color:#6b7280}
+
+/* Responsive adjustments using Flexbox */
+@media (max-width:900px){
+  .navbar{padding:0.5rem 0.75rem}
+  .nav-links{gap:0.6rem}
+}
+
+@media (max-width:700px){
+  .nav-links{flex-direction:column;align-items:flex-start;width:100%;padding-top:0.5rem}
+  .nav-links a{width:100%}
+  .navbar-inner{flex-direction:column;align-items:flex-start}
+}
+
+@media (max-width:480px){
+  .contact-hero h1{font-size:1.5rem}
+  .contact-container{padding:0.5rem;gap:1rem}
+}

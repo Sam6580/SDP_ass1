@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Hospital</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- FLEXBOX: `.navbar` uses Flexbox to align logo and nav links -->
+      <nav class="navbar">
+        <a class="logo" href="index.html">Hospital</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="patients.html">Patients</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>About City General Hospital</h1>
+      <!-- FLEXBOX: About page layout uses Flexbox to place image and text side-by-side and wrap on small screens -->
+      <div style="display:flex;gap:1rem;align-items:flex-start;flex-wrap:wrap">
+        <img src="../assets/images/about-photo.svg" alt="Our team" style="max-width:360px;width:45%;height:auto;border-radius:8px;flex:1 1 260px" />
+        <div style="flex:1 1 320px">
+          <p>Founded to serve the healthcare needs of our community, City General Hospital combines advanced medical practices with a compassionate approach. Our multidisciplinary teams include specialists across medicine, surgery, pediatrics, obstetrics, and critical care.</p>
+          <h3>Our Mission</h3>
+          <p>To deliver patient-centered, high-quality healthcare that improves health outcomes and enhances the well-being of the community.</p>
+          <h3>Our Values</h3>
+          <ul>
+            <li>Compassion: Caring for patients with dignity.</li>
+            <li>Excellence: Maintaining high clinical standards.</li>
+            <li>Collaboration: Working across teams for best outcomes.</li>
+            <li>Safety: Prioritizing patient and staff safety.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> City General Hospital.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

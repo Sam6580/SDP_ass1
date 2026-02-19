@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Appointments — Hospital</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- FLEXBOX: `.navbar` uses Flexbox to align logo and nav links -->
+      <nav class="navbar">
+        <a class="logo" href="index.html">Hospital</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="patients.html">Patients</a></li>
+          <li><a class="active" href="appointments.html">Appointments</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>Appointment Booking</h1>
+      <!-- FLEXBOX: `.contact-container` places the appointment form and list side-by-side using Flexbox -->
+      <div class="contact-container">
+        <div class="contact-form">
+          <h2>Book Appointment</h2>
+          <form id="appointmentForm">
+            <label for="patientSelect">Patient</label>
+            <select id="patientSelect" required>
+              <option value="">-- Select patient --</option>
+            </select>
+
+            <label for="doctor">Doctor</label>
+            <input id="doctor" name="doctor" type="text" required />
+
+            <label for="date">Date & Time</label>
+            <input id="datetime" name="datetime" type="datetime-local" required />
+
+            <button type="submit">Book</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h2>Appointments</h2>
+          <table id="appointmentsTable" style="width:100%;border-collapse:collapse">
+            <thead>
+              <tr>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Date/Time</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> City General Hospital.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/appointments.js"></script>
+  </body>
+</html>

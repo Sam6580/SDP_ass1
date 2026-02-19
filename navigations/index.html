@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home — Hospital</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- FLEXBOX: `.navbar` uses Flexbox to layout the logo and navigation links horizontally -->
+      <nav class="navbar">
+        <a class="logo" href="index.html">Hospital</a>
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="patients.html">Patients</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="home-hero">
+        <!-- FLEXBOX: Hero uses inline Flexbox to place image and intro side-by-side and wrap on small screens -->
+        <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+          <img src="../assets/images/hero.svg" alt="Hospital" style="max-width:48%;height:auto;border-radius:8px;flex:1 1 280px" />
+          <div style="flex:1 1 320px">
+            <h1>Welcome to City General Hospital</h1>
+            <p>City General Hospital provides high-quality, compassionate care to individuals and families in our community. We offer 24/7 emergency services, outpatient clinics, inpatient care, diagnostic imaging, laboratory services, pharmacy, and more.</p>
+            <p>Our team of experienced physicians, nurses, and support staff work together to deliver patient-centered care with dignity and respect.</p>
+            <p><a href="services.html" style="color:#0b66c3;text-decoration:underline">Explore our services</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:1.5rem">
+        <h2 style="margin-bottom:0.5rem">Featured Services</h2>
+        <!-- FLEXBOX: Featured services are arranged with Flexbox cards that wrap on narrow screens -->
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <article style="flex:1 1 220px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+            <img src="../assets/images/service-emergency.svg" alt="Emergency" style="width:56px;height:56px;margin-bottom:0.5rem" />
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency department staffed by experienced physicians and trained nurses for critical care.</p>
+          </article>
+
+          <article style="flex:1 1 220px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+            <img src="../assets/images/service-appointment.svg" alt="Appointments" style="width:56px;height:56px;margin-bottom:0.5rem" />
+            <h3>Appointments</h3>
+            <p>Book consultations with specialists, view schedules, and manage follow-ups through the appointment system.</p>
+          </article>
+
+          <article style="flex:1 1 220px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+            <img src="../assets/images/service-pharmacy.svg" alt="Pharmacy" style="width:56px;height:56px;margin-bottom:0.5rem" />
+            <h3>Pharmacy</h3>
+            <p>On-site pharmacy with prescription dispensing, medication counselling, and stock management.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> City General Hospital.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect width="100%" height="100%" fill="#eef6ff" rx="8"/>
+  <g fill="#0b66c3" font-family="Arial, Helvetica, sans-serif">
+    <text x="40" y="120" font-size="28" font-weight="700">Our Care Team</text>
+    <text x="40" y="160" font-size="14">Experienced doctors, nurses, and support staff delivering patient-centered care.</text>
+  </g>
+</svg>

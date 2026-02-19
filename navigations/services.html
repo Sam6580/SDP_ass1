@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services — Hospital</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- FLEXBOX: `.navbar` uses Flexbox to align logo and nav links -->
+      <nav class="navbar">
+        <a class="logo" href="index.html">Hospital</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="services.html">Services</a></li>
+          <li><a href="patients.html">Patients</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>Our Services</h1>
+      <p>We provide a wide range of clinical and support services designed to meet the needs of patients across all ages. Below are our core service areas with brief descriptions.</p>
+
+      <!-- FLEXBOX: Service cards are arranged using Flexbox and wrap responsively -->
+      <section style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem">
+        <article style="flex:1 1 300px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+          <h3>Emergency Care</h3>
+          <p>24/7 emergency department with triage, resuscitation, and short-stay observation. Our emergency team handles trauma, acute medical emergencies, and rapid stabilization prior to admission or discharge.</p>
+        </article>
+
+        <article style="flex:1 1 300px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+          <h3>Outpatient Clinics</h3>
+          <p>Specialist clinics by appointment including cardiology, endocrinology, pediatrics, orthopedics, and more. Services include consultations, follow-ups, diagnostics, and outpatient procedures.</p>
+        </article>
+
+        <article style="flex:1 1 300px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+          <h3>Inpatient Care</h3>
+          <p>Short-term and long-term inpatient services with dedicated wards, nursing care, and multidisciplinary care planning for surgeries, medical treatment, and recovery support.</p>
+        </article>
+
+        <article style="flex:1 1 300px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+          <h3>Diagnostics & Imaging</h3>
+          <p>On-site radiology and laboratory services including X-ray, ultrasound, CT, MRI (referral), blood tests, and clinical pathology to support rapid diagnosis.</p>
+        </article>
+
+        <article style="flex:1 1 300px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+          <h3>Pharmacy & Medication Management</h3>
+          <p>Hospital pharmacy dispenses inpatient and outpatient prescriptions, provides medication counselling, and supports pharmacy stock management and expiry tracking.</p>
+        </article>
+
+        <article style="flex:1 1 300px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06)">
+          <h3>Laboratory Services</h3>
+          <p>Routine and specialized laboratory testing with timely reporting to clinicians; supports inpatient, outpatient and emergency care.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> City General Hospital.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
